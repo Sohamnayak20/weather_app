@@ -1,0 +1,158 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+
+  body{
+    width: 100%;
+    height:100vh;
+    background: url("./components/image/cloud.jpg")center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+ .main_div{
+  
+   width:100%;
+   height:100vh;
+   display: flex;
+   flex-direction:row;
+   justify-content: center;
+   align-items: center;
+ 
+ }
+ .sub_div{
+ 
+  border-radius:5px;
+  background-color: rgba(0,0,0,0.6);
+  width:45%;
+  padding:25px;
+  min-height:477px;
+ }
+
+ .user_input{
+  margin-bottom:1rem;
+  /* width:50%; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ .user_input input{
+  width:60%;
+  height:2rem;
+  font-size:0.8rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  border-radius:0.8rem;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  color:black;
+ }
+ .user_input input::placeholder{
+  font-size:0.8rem;
+  color:rgb(163, 144, 144);
+ }
+ .fetch_data{
+  
+  height:20vh;
+  margin-bottom:1rem;
+  padding:1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 500;
+ }
+ .fa-cloud-rain{
+  color:white;
+ }
+ .card{
+  
+  margin-bottom:1rem;
+  display: flex;
+  flex-direction: row;
+   width:90%;
+   margin: auto;
+   flex-wrap: wrap;
+  justify-content: space-evenly;
+ }
+ .cards{
+  background-color:rgba(0,0,0,0.4);
+  width:40%;
+  margin:1rem;
+  padding:1rem;
+  text-align: center;
+  border-radius:5px;
+ }
+ 
+
+
+ .img_icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:1rem;
+ }
+ .img_icon p{
+  margin-left:0.5rem;
+ }
+
+.error{
+  font-size:1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin:2rem auto;
+}
+
+@media only screen and (min-width:400px) and (max-width: 1008px) {
+
+  .card{
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  }
+  .cards{
+    width:90%;
+  }
+
+  .sub_div{
+    width: 100%;
+    padding-top:10rem;
+    margin-top:12rem;
+  }
+
+}
+@media only screen and (min-width:200px) and (max-width: 400px) {
+
+  .card{
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  }
+  .cards{
+    width:90%;
+  }
+
+  .sub_div{
+    width: 100%;
+    padding-top:10rem;
+    margin-top:12rem;
+  }
+  .fetch_data{
+    flex-direction: column;
+    margin-bottom:5rem;
+  }
+}
+
+
+
