@@ -30,7 +30,7 @@ export default function Weather() {
           <div className="user_input">
             <input type="text" placeholder="enter city name"
               onChange={(event) => {
-                setSearch(event.target.value);
+                setSearch(event.target.value.trim());
               }}
             />
             <Button variant="contained" size="medium" style={{'display':city?'block':'none'}}
