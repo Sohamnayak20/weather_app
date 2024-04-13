@@ -44,7 +44,7 @@ export default function Weather() {
 
           {
             !city ? (
-              <p className='error'>Data is Not found</p>
+              <p className='error'>Data Not found</p>
             ) : <>
               <div className="fetch_data">
                 <div className="city_name">
